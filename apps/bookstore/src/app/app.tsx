@@ -1,16 +1,27 @@
-import styled from 'styled-components';
-
-const StyledApp = styled.div`
-  /* Your style here */
-`;
+import { Routes, Route, Link, Navigate } from 'react-router-dom';
+import { AcmeBooks } from '@acme/books';
+import { GlobalStyles, Header, Main, NavigationItem, NavigationList } from '@acme/ui';
 
 export function App() {
   return (
-    <StyledApp>
-      <header>
+    <>
+      <GlobalStyles />
+      <Header>
         <h1>Booksore</h1>
-      </header>
-    </StyledApp>
+        <NavigationList>
+          <NavigationItem>
+            <Link to="/books">Books</Link>
+          </NavigationItem>
+        </NavigationList>
+      </Header>
+
+      <Main role="navigation">
+        <Routes>
+          <Route path="/books" element={<AcmeBooks />} />
+          <Route path="/" element={<Navigate to="/books" replace />} />
+        </Routes>
+      </Main>
+    </>
   );
 }
 
