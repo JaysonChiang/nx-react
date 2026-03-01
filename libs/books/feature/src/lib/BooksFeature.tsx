@@ -1,20 +1,24 @@
-import {useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { getBooks } from '@acme/books-data-access';
-import { Books } from '@acme/books-ui';  
+import { Books } from '@acme/books-ui';
+import { IBook } from '@acme/shared-models';
 
 export function BooksFeature() {
-  const [books, setBooks] = useState<any[]>([]);
+  const [books, setBooks] = useState<IBook[]>([]);
 
   useEffect(() => {
-    getBooks().then((books)=>{
+    getBooks().then((books) => {
       setBooks(books);
     });
-  }, [])
+  }, []);
 
   return (
     <>
       <h2>Books</h2>
-      <Books books={books} onAdd={(book) => console.log('Add to cart:', book)} />
+      <Books
+        books={books}
+        onAdd={(book) => console.log('Add to cart:', book)}
+      />
     </>
   );
 }

@@ -20,6 +20,15 @@
     },
     {
       "path": "./libs/books/ui"
+    },
+    {
+      "path": "./apps/api-e2e"
+    },
+    {
+      "path": "./apps/api"
+    },
+    {
+      "path": "./libs/shared-models"
     }
   ]
 }
