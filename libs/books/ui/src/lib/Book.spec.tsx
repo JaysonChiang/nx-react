@@ -12,6 +12,7 @@ describe('Book', () => {
           author: 'Test Author',
           price: 9.99,
         }}
+        onAdd={() => {}}
       />
     );
     expect(baseElement).toBeTruthy();
