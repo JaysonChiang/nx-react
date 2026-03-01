@@ -10,6 +10,7 @@ describe('Book', () => {
           id: 1,
           title: 'Test Title',
           author: 'Test Author',
+          rating: 5,
           price: 9.99,
         }}
         onAdd={() => {}}

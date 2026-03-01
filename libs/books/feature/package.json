@@ -12,7 +12,6 @@
     "./package.json": "./package.json"
   },
   "nx": {
-    "name": "BooksFeature",
     "tags": [
       "scope:books",
       "type:feature"
