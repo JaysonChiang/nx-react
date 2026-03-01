@@ -1,5 +1,5 @@
 import { Routes, Route, Link, Navigate } from 'react-router-dom';
-import { AcmeBooks } from '@acme/books';
+import { BooksFeature } from '@acme/books-feature';
 import { GlobalStyles, Header, Main, NavigationItem, NavigationList } from '@acme/ui';
 
 export function App() {
@@ -17,7 +17,7 @@ export function App() {
 
       <Main role="navigation">
         <Routes>
-          <Route path="/books" element={<AcmeBooks />} />
+          <Route path="/books" element={<BooksFeature />} />
           <Route path="/" element={<Navigate to="/books" replace />} />
         </Routes>
       </Main>

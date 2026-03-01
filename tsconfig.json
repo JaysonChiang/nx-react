@@ -10,10 +10,16 @@
       "path": "./apps/bookstore"
     },
     {
-      "path": "./books"
+      "path": "./libs/ui"
     },
     {
-      "path": "./ui"
+      "path": "./libs/books/feature"
+    },
+    {
+      "path": "./libs/books/data-access"
+    },
+    {
+      "path": "./libs/books/ui"
     }
   ]
 }

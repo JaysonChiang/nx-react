@@ -1,6 +1,6 @@
 module.exports = {
-  displayName: '@acme/books',
-  preset: '../jest.preset.js',
+  displayName: '@acme/books-ui',
+  preset: '../../../jest.preset.js',
   transform: {
     '^(?!.*\\.(js|jsx|ts|tsx|css|json)$)': '@nx/react/plugins/jest',
     '^.+\\.[tj]sx?$': ['babel-jest', { presets: ['@nx/react/babel'] }],

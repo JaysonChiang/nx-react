@@ -1,10 +1,10 @@
 import { render } from '@testing-library/react';
 
-import AcmeBooks from './books';
+import BooksFeature from './BooksFeature';
 
-describe('AcmeBooks', () => {
+describe('BooksFeature', () => {
   it('should render successfully', () => {
-    const { baseElement } = render(<AcmeBooks />);
+    const { baseElement } = render(<BooksFeature />);
     expect(baseElement).toBeTruthy();
   });
 });

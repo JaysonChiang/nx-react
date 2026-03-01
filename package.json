@@ -15,6 +15,7 @@
     "@babel/core": "^7.14.5",
     "@babel/preset-react": "^7.14.5",
     "@nx/devkit": "22.5.3",
+    "@nx/eslint-plugin": "^22.5.3",
     "@nx/jest": "22.5.3",
     "@nx/js": "22.5.3",
     "@nx/playwright": "22.5.3",
@@ -28,6 +29,7 @@
     "@swc-node/register": "~1.11.1",
     "@swc/core": "~1.15.5",
     "@swc/helpers": "~0.5.18",
+    "@swc/jest": "~0.2.38",
     "@testing-library/dom": "10.4.0",
     "@testing-library/react": "16.3.0",
     "@types/jest": "^30.0.0",
@@ -40,6 +42,7 @@
     "babel-plugin-styled-components": "1.10.7",
     "jest": "^30.0.2",
     "jest-environment-jsdom": "^30.0.2",
+    "jest-environment-node": "^30.0.2",
     "jest-util": "^30.0.2",
     "nx": "22.5.3",
     "prettier": "~3.6.2",
@@ -52,7 +55,7 @@
   },
   "workspaces": [
     "apps/*",
-    "books",
-    "ui"
+    "libs/ui",
+    "libs/books/*"
   ]
 }
